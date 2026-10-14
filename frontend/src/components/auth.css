@@ -1,0 +1,196 @@
+/* Sign-in panel inside the entry scene: an instrument readout, not a generic modal. */
+.auth-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: grid;
+  place-items: center end;
+  padding: 24px clamp(16px, 7vw, 120px);
+  background: radial-gradient(60% 70% at 30% 50%, transparent 0%, rgba(0, 0, 0, 0.55) 70%);
+  animation: auth-fade 0.35s var(--ease);
+}
+@keyframes auth-fade {
+  from {
+    opacity: 0;
+  }
+}
+.auth-panel {
+  position: relative;
+  width: min(400px, 100%);
+  display: grid;
+  gap: 12px;
+  padding: 28px 28px 22px;
+  background: linear-gradient(180deg, rgba(14, 18, 26, 0.92), rgba(6, 8, 12, 0.94));
+  border: 1px solid rgba(201, 162, 74, 0.28);
+  border-radius: 4px;
+  box-shadow:
+    0 30px 90px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(14px);
+  animation: auth-in 0.45s var(--ease);
+}
+@keyframes auth-in {
+  from {
+    opacity: 0;
+    transform: translateX(18px);
+  }
+}
+.auth-corner {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: var(--brass);
+  border-style: solid;
+  border-width: 0;
+}
+.auth-corner.tl {
+  top: -1px;
+  left: -1px;
+  border-top-width: 2px;
+  border-left-width: 2px;
+}
+.auth-corner.br {
+  right: -1px;
+  bottom: -1px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+}
+.auth-x {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: 0;
+  color: var(--muted);
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+.auth-x:hover {
+  color: var(--text);
+}
+.auth-kicker {
+  margin: 0;
+  font-size: 10.5px;
+  letter-spacing: 0.22em;
+  color: var(--brass);
+}
+.auth-panel h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+.auth-sub {
+  margin: -4px 0 6px;
+  color: var(--text-2);
+  font-size: 13.5px;
+}
+.auth-field {
+  display: grid;
+  gap: 5px;
+}
+.auth-field label {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.auth-field input {
+  font: inherit;
+  font-size: 15px;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.025);
+  border: 0;
+  border-bottom: 1px solid var(--line-2);
+  border-radius: 0;
+  padding: 9px 2px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.auth-field input:focus {
+  border-bottom-color: var(--brass);
+  box-shadow: 0 1px 0 var(--brass);
+}
+.auth-field.bad input {
+  border-bottom-color: var(--red);
+}
+.auth-err {
+  font-size: 12.5px;
+  color: var(--red);
+}
+.auth-hint {
+  font-size: 12px;
+  color: var(--muted);
+}
+.auth-form-err {
+  margin: 0;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: #ffd0d6;
+  background: var(--red-dim);
+  border-left: 2px solid var(--red);
+}
+.auth-submit {
+  margin-top: 6px;
+  justify-content: center;
+  min-height: 44px;
+}
+.auth-switch {
+  background: none;
+  border: 0;
+  color: var(--text-2);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 6px;
+  text-decoration: underline;
+  text-decoration-color: rgba(201, 162, 74, 0.5);
+  text-underline-offset: 3px;
+}
+.auth-switch:hover {
+  color: var(--brass-hi);
+}
+
+/* phones: the panel rises from the bottom like a sheet, the compass stays visible above it */
+@media (max-width: 700px) {
+  .auth-layer {
+    place-items: end stretch;
+    padding: 0;
+    background: linear-gradient(180deg, transparent 20%, rgba(0, 0, 0, 0.7));
+  }
+  .auth-panel {
+    width: 100%;
+    border-radius: 14px 14px 0 0;
+    padding: 24px 20px calc(20px + env(safe-area-inset-bottom));
+    animation-name: auth-up;
+  }
+  @keyframes auth-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .auth-layer,
+  .auth-panel {
+    animation: none;
+  }
+}
+
+/* in-app notice when the server ended a saved sign-in */
+.session-notice {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 12px clamp(16px, 3vw, 32px) 0;
+  padding: 10px 14px;
+  font-size: 13.5px;
+  color: #ffe2b0;
+  background: var(--amber-dim);
+  border-left: 2px solid var(--amber);
+}

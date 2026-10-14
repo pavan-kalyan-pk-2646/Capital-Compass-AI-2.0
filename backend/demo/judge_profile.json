@@ -1,0 +1,50 @@
+{
+  "name": "Arjun (Judge profile)",
+  "age": 28,
+  "dependents": 0,
+  "employment": "salaried_stable",
+  "monthly_income": 80000,
+  "other_income": 0,
+  "essential_expenses": 30000,
+  "discretionary_expenses": 14000,
+  "assets": {
+    "cash": 220000,
+    "equity": 230000,
+    "debt": 100000,
+    "gold": 50000,
+    "real_estate": 0,
+    "other": 0
+  },
+  "liabilities": [
+    {
+      "type": "education",
+      "name": "Education loan",
+      "outstanding": 310000,
+      "emi": 8000,
+      "annual_rate_pct": 9.5,
+      "remaining_months": 46,
+      "floating_rate": true
+    }
+  ],
+  "goals": [
+    {
+      "name": "Home down payment",
+      "goal_type": "home",
+      "target_amount": 2500000,
+      "current_amount": 0,
+      "years": 5,
+      "priority": "high"
+    }
+  ],
+  "risk": {
+    "max_tolerated_loss_pct": 15,
+    "experience": "intermediate",
+    "reaction_to_20pct_drop": "hold"
+  },
+  "behaviour": {
+    "investment_frequency": "monthly_sip",
+    "current_monthly_investment": 15000,
+    "high_risk_spending": 0,
+    "credit_card_behaviour": "full"
+  }
+}

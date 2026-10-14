@@ -1,0 +1,9 @@
+symbol,asset_class,sector,value
+HDFCBANK,equity,Financials,95000
+ICICIBANK,equity,Financials,52000
+INFY,equity,IT,38000
+TCS,equity,IT,22000
+NIFTY50 Index Fund,equity,Diversified,23000
+Short Duration Debt Fund,debt,Debt,60000
+PPF,debt,Debt,40000
+Gold ETF,gold,Gold,50000

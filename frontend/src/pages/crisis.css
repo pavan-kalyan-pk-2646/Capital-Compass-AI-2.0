@@ -1,0 +1,92 @@
+.warroom {
+  --wr: #f0566a;
+}
+.crisis-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+.crisis-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  text-align: left;
+  padding: 14px;
+  border-radius: var(--r-md);
+  border: 1px solid var(--line);
+  background: var(--panel);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+.crisis-card svg {
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+.crisis-card strong {
+  font-size: 14.5px;
+}
+.crisis-card span {
+  font-size: 12.5px;
+  color: var(--muted);
+}
+.crisis-card:hover {
+  border-color: var(--line-2);
+}
+.crisis-card.on {
+  border-color: var(--wr);
+  background: linear-gradient(180deg, rgba(240, 86, 106, 0.12), var(--panel) 70%);
+}
+.crisis-card.on svg {
+  color: var(--wr);
+}
+.severity {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 18px 22px;
+  border-radius: var(--r-lg);
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+.severity .small {
+  color: var(--muted);
+}
+.sev-word {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.sev-facts {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: var(--text-2);
+}
+.sev-low .sev-word {
+  color: var(--green);
+}
+.sev-moderate .sev-word {
+  color: var(--amber);
+}
+.sev-high,
+.sev-severe {
+  border-color: rgba(240, 86, 106, 0.55);
+  background: linear-gradient(90deg, rgba(240, 86, 106, 0.16), var(--panel) 60%);
+}
+.sev-high .sev-word,
+.sev-severe .sev-word {
+  color: var(--red);
+}
+@media (max-width: 1180px) {
+  .crisis-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 560px) {
+  .crisis-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

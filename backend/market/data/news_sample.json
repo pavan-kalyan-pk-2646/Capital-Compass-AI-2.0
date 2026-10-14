@@ -1,0 +1,128 @@
+[
+  {
+    "id": "demo-01",
+    "region": "india",
+    "title": "Illustrative: central bank raises policy repo rate by 25 bps",
+    "summary": "Sample scenario, not current news. The monetary policy committee raises the repo rate by 25 basis points; banks may pass the change on to floating-rate home loan and personal loan EMIs over the following months."
+  },
+  {
+    "id": "demo-02",
+    "region": "india",
+    "title": "Illustrative: central bank cuts repo rate by 50 bps to support growth",
+    "summary": "Sample scenario, not current news. A rate cut can lower borrowing costs on new and floating-rate loans, while fixed deposit rates may also drift lower."
+  },
+  {
+    "id": "demo-03",
+    "region": "india",
+    "title": "Illustrative: retail CPI inflation rises above the central bank's tolerance band",
+    "summary": "Sample scenario, not current news. Higher food and fuel prices push consumer price inflation up; household budgets and the future cost of goals such as education may rise."
+  },
+  {
+    "id": "demo-04",
+    "region": "india",
+    "title": "Illustrative: food prices ease and CPI inflation cools for a third month",
+    "summary": "Sample scenario, not current news. Cooling inflation can help real returns on savings and reduce pressure on monthly household expenses."
+  },
+  {
+    "id": "demo-05",
+    "region": "india",
+    "title": "Illustrative: Nifty 50 falls 4% in a week as investors sell equities",
+    "summary": "Sample scenario, not current news. A broad sell-off in Indian stocks lowers the value of equity mutual funds; short-term volatility matters most for money needed soon."
+  },
+  {
+    "id": "demo-06",
+    "region": "india",
+    "title": "Illustrative: Sensex reaches a record high on strong foreign investor inflows",
+    "summary": "Sample scenario, not current news. A rally lifts equity portfolios; past gains do not indicate future returns and portfolios can drift away from target allocation."
+  },
+  {
+    "id": "demo-07",
+    "region": "global",
+    "title": "Illustrative: US Federal Reserve holds interest rates steady, signals caution",
+    "summary": "Sample scenario, not current news. Global bond yields and the dollar may react to central bank signals, which can feed into emerging-market currencies and flows."
+  },
+  {
+    "id": "demo-08",
+    "region": "global",
+    "title": "Illustrative: global stocks slide as recession fears grow",
+    "summary": "Sample scenario, not current news. Weaker growth expectations in major economies weigh on equity markets worldwide, including international funds."
+  },
+  {
+    "id": "demo-09",
+    "region": "india",
+    "title": "Illustrative: quarterly GDP growth slows to 5.8% as consumption softens",
+    "summary": "Sample scenario, not current news. Slower economic growth can affect company earnings and, over time, hiring and wage growth."
+  },
+  {
+    "id": "demo-10",
+    "region": "india",
+    "title": "Illustrative: manufacturing PMI and exports strengthen the economic outlook",
+    "summary": "Sample scenario, not current news. Stronger factory activity and export demand point to steadier economic growth in the coming quarters."
+  },
+  {
+    "id": "demo-11",
+    "region": "india",
+    "title": "Illustrative: IT services firms announce layoffs and slow campus hiring",
+    "summary": "Sample scenario, not current news. Job cuts in the technology sector can affect income stability for salaried employees in the industry."
+  },
+  {
+    "id": "demo-12",
+    "region": "india",
+    "title": "Illustrative: urban unemployment rate falls in the latest labour force survey",
+    "summary": "Sample scenario, not current news. A stronger job market can support household income and consumption."
+  },
+  {
+    "id": "demo-13",
+    "region": "global",
+    "title": "Illustrative: semiconductor demand from AI data centres lifts technology shares",
+    "summary": "Sample scenario, not current news. Tech-heavy funds may become more concentrated after a sector rally."
+  },
+  {
+    "id": "demo-14",
+    "region": "india",
+    "title": "Illustrative: UPI transaction volumes hit a new monthly high as digital payments grow",
+    "summary": "Sample scenario, not current news. Growth in digital payments and fintech adoption continues."
+  },
+  {
+    "id": "demo-15",
+    "region": "india",
+    "title": "Illustrative: banks report rising stress in unsecured personal loans",
+    "summary": "Sample scenario, not current news. Banking sector data shows higher delinquencies on credit cards and personal loans; lenders may tighten credit."
+  },
+  {
+    "id": "demo-16",
+    "region": "india",
+    "title": "Illustrative: real estate sector sees housing sales slow in major cities",
+    "summary": "Sample scenario, not current news. Housing demand cools as home loan costs stay elevated; realty and cement stocks may react."
+  },
+  {
+    "id": "demo-17",
+    "region": "india",
+    "title": "Illustrative: markets regulator tightens rules on small-cap mutual fund disclosures",
+    "summary": "Sample scenario, not current news. New regulatory guidelines require funds to publish liquidity stress-test results for investors."
+  },
+  {
+    "id": "demo-18",
+    "region": "india",
+    "title": "Illustrative: budget revises income tax slabs and retirement savings deductions",
+    "summary": "Sample scenario, not current news. Changes in tax rules can alter take-home pay and the value of tax-saving options such as PPF, NPS and ELSS."
+  },
+  {
+    "id": "demo-19",
+    "region": "india",
+    "title": "Illustrative: banks raise fixed deposit rates for senior citizens",
+    "summary": "Sample scenario, not current news. Higher deposit rates can improve returns on emergency-fund savings and short-term cash."
+  },
+  {
+    "id": "demo-20",
+    "region": "global",
+    "title": "Illustrative: crude oil prices jump on supply concerns",
+    "summary": "Sample scenario, not current news. Higher oil prices can feed into fuel prices and inflation in import-dependent economies and affect the rupee."
+  },
+  {
+    "id": "demo-21",
+    "region": "india",
+    "title": "Illustrative: rupee weakens to a record low against the US dollar",
+    "summary": "Sample scenario, not current news. A weaker currency can raise the cost of imports, foreign education and overseas travel."
+  }
+]

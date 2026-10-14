@@ -1,0 +1,119 @@
+.score-rows {
+  display: grid;
+  gap: 12px;
+}
+.score-row {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr) 44px;
+  gap: 12px;
+  align-items: center;
+  font-size: 14px;
+}
+.score-row .num {
+  text-align: right;
+}
+.goal-prog {
+  min-width: 120px;
+}
+
+.activity {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.activity li {
+  display: grid;
+  grid-template-columns: 14px minmax(0, 1fr) auto;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: start;
+}
+.activity li:last-child {
+  border-bottom: 0;
+}
+.activity .dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-top: 6px;
+  background: var(--green);
+}
+.activity .dot.failed {
+  background: var(--red);
+}
+.activity .dot.idle {
+  background: var(--line-2);
+}
+.activity .who {
+  font-weight: 600;
+  font-size: 14px;
+}
+.activity .what {
+  font-size: 13px;
+  color: var(--text-2);
+  margin-top: 2px;
+  overflow-wrap: anywhere;
+}
+.activity time {
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+@media (max-width: 560px) {
+  .score-row {
+    grid-template-columns: 100px minmax(0, 1fr) 40px;
+  }
+}
+.section-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+.alerts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.alerts li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: var(--r-md);
+  border-left: 3px solid var(--line-2);
+  background: var(--ink-2);
+}
+.alerts li.red {
+  border-left-color: var(--red);
+}
+.alerts li.amber {
+  border-left-color: var(--amber);
+}
+.alerts li.blue {
+  border-left-color: var(--blue);
+}
+.alerts li > div {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+.alerts strong {
+  font-size: 14px;
+}
+.alerts span {
+  font-size: 13px;
+  color: var(--text-2);
+}
+@media (max-width: 560px) {
+  .alerts li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

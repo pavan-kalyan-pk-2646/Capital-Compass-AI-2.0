@@ -1,0 +1,21 @@
+# secrets & local data
+.env
+.env.*
+!.env.example
+backend/.secret_key
+*.db
+*.sqlite3
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# frontend
+node_modules/
+dist/
+*.tsbuildinfo
+vite.config.ts.timestamp-*

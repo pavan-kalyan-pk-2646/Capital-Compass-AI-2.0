@@ -1,0 +1,278 @@
+/* Market Intelligence — headline feed with impact mapping */
+.market .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Mode banner */
+.mkt-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: var(--r-md);
+  border: 1px solid var(--line-2);
+  background: var(--panel);
+}
+.mkt-banner-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+.mkt-banner.live .dot {
+  background: var(--green);
+  margin-top: 7px;
+  flex: none;
+}
+.mkt-banner.offline {
+  border-color: var(--amber);
+  background: var(--amber-dim);
+}
+.mkt-banner.offline > svg {
+  color: var(--amber);
+  flex: none;
+  margin-top: 2px;
+}
+.mkt-banner .btn {
+  flex: none;
+}
+
+/* Category chips */
+.mkt-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.mkt-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line-2);
+  background: var(--ink-2);
+  color: var(--text-2);
+  font-size: 13.5px;
+  cursor: pointer;
+  transition:
+    border-color 0.15s,
+    background 0.15s,
+    color 0.15s;
+}
+.mkt-chip:hover {
+  border-color: var(--muted);
+  color: var(--text);
+}
+.mkt-chip.on {
+  background: var(--brass-dim);
+  border-color: var(--brass);
+  color: var(--brass-hi);
+}
+.mkt-count {
+  font-size: 12px;
+  min-width: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  background: var(--panel-2);
+  color: var(--muted);
+  text-align: center;
+}
+.mkt-chip.on .mkt-count {
+  background: rgba(201, 162, 74, 0.22);
+  color: var(--brass-hi);
+}
+
+/* Layout */
+.mkt-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+  gap: 16px;
+  align-items: start;
+}
+.mkt-layout > * {
+  min-width: 0;
+}
+.mkt-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.mkt-side {
+  position: sticky;
+  top: 76px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.mkt-more {
+  align-self: center;
+}
+
+/* Story card */
+.mkt-story {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.mkt-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-2);
+}
+.mkt-source {
+  font-weight: 500;
+  color: var(--text);
+}
+.mkt-title {
+  font-size: 17px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.mkt-title a {
+  text-decoration: none;
+}
+.mkt-title a:hover {
+  color: var(--brass-hi);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.mkt-badges {
+  gap: 6px;
+}
+.mkt-summary {
+  margin: 0;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+.mkt-why {
+  border-left: 2px solid var(--brass);
+  padding: 2px 0 2px 12px;
+}
+.mkt-why p {
+  margin: 2px 0 0;
+}
+.mkt-impact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.mkt-impact-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mkt-dchip {
+  font-size: 12px;
+  padding: 2px 9px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--line-2);
+  background: var(--ink-2);
+  color: var(--text-2);
+}
+.mkt-test {
+  gap: 6px;
+}
+.mkt-out {
+  align-self: flex-start;
+  color: var(--muted);
+}
+.mkt-out:hover {
+  color: var(--brass-hi);
+}
+
+/* Side panel */
+.mkt-domains {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.mkt-domains p {
+  margin: 4px 0 0;
+  overflow-wrap: anywhere;
+}
+.mkt-domains a {
+  color: var(--text);
+}
+.mkt-domain-name {
+  gap: 6px;
+  font-weight: 500;
+}
+.mkt-domain-name svg {
+  color: var(--brass);
+}
+.mkt-meter {
+  height: 4px;
+  margin-top: 6px;
+  border-radius: 2px;
+  background: var(--line);
+  overflow: hidden;
+}
+.mkt-meter i {
+  display: block;
+  height: 100%;
+  background: var(--blue);
+  border-radius: 2px;
+}
+.mkt-sources summary {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+}
+.mkt-sources ul {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.mkt-sources li {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 1180px) {
+  .mkt-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .mkt-side {
+    position: static;
+    order: -1;
+  }
+}
+@media (max-width: 560px) {
+  .mkt-banner {
+    flex-wrap: wrap;
+  }
+  .mkt-banner .btn {
+    margin-left: 30px;
+  }
+  .mkt-chip {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+  .mkt-title {
+    font-size: 16px;
+  }
+}
+.mkt-badges .badge {
+  white-space: normal;
+  max-width: 100%;
+}

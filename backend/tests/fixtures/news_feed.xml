@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Fixture Finance Wire</title>
+    <link>https://example.com/</link>
+    <description>Test fixture feed (synthetic, used only by tests)</description>
+    <item>
+      <title>Central bank raises repo rate by 25 bps; home loan EMIs may rise</title>
+      <link>https://example.com/news/rate-hike</link>
+      <pubDate>Tue, 06 Oct 2026 09:30:00 +0530</pubDate>
+      <description><![CDATA[<p>The <b>monetary policy</b> committee raised the policy rate &amp; signalled caution.</p><img src="x.png"/>]]></description>
+    </item>
+    <item>
+      <title>CPI inflation climbs as food prices surge</title>
+      <link>https://example.com/news/cpi</link>
+      <pubDate>Wed, 07 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Retail inflation rose for a second month, lifting the cost of living for households.</description>
+    </item>
+    <item>
+      <title>Sensex and Nifty fall 3% in broad sell-off</title>
+      <link>https://example.com/news/selloff</link>
+      <pubDate>Mon, 05 Oct 2026 16:00:00 +0530</pubDate>
+      <description>Equity markets slid as investors booked profits. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</description>
+    </item>
+    <item>
+      <title>Sensex and Nifty fall 3% in broad sell-off!</title>
+      <link>https://example.com/news/selloff-dupe</link>
+      <pubDate>Mon, 05 Oct 2026 16:05:00 +0530</pubDate>
+      <description>Duplicate headline with different punctuation.</description>
+    </item>
+    <item>
+      <title>IT firms announce layoffs as hiring slows</title>
+      <link>javascript:alert(1)</link>
+      <description>Job cuts in the technology sector.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://example.com/news/untitled</link>
+    </item>
+  </channel>
+</rss>

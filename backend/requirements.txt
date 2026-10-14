@@ -1,0 +1,26 @@
+# Capital Compass AI 2.0 — backend (Python 3.10+). No API keys required.
+
+# Web API
+flask>=3.0
+flask-cors>=4.0
+python-dotenv>=1.0
+pydantic>=2.8
+
+# AI orchestration
+langgraph>=0.2
+
+# Engines (Monte Carlo, market data)
+numpy>=1.26
+pandas>=2.2
+
+# Persistence — MySQL 8 via PyMySQL (SQLite fallback built in)
+SQLAlchemy>=2.0
+pymysql>=1.1
+cryptography>=42      # PyMySQL needs it for MySQL 8 caching_sha2_password auth
+
+# Auth (optional accounts)
+bcrypt>=4.1
+
+# Dev / tests
+pytest>=8
+ruff>=0.6
